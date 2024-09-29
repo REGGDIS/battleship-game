@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/iconos/Battleship-512.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/assets/css/estilos.css" />
+    <title>Battleship Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container-header">
+        <div class="container-puntaje">
+          <h4>Puntaje Jugador:</h4>
+          <span class="puntaje" id="scoreJugador">0</span>
+        </div>
+        <div class="logo"><h1>Battleship Game</h1></div>
+        <div class="container-jugadas">
+          <h4>Jugadas Restantes:</h4>
+          <span id="restantes">10</span>
+        </div>
+        <div class="jugador">
+          <span id="nombreJugador"></span>
+        </div>
+      </div>
+      <div class="jugador">
+        <span id="nombreJugador"></span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div class="container">
+        <div class="container-superior">
+          <div class="numeros-arriba">0123456789</div>
+        </div>
+
+        <div class="container-juego">
+          <div class="container-lateral1">
+            <div class="numeros">0123456789</div>
+          </div>
+          <div class="tablero"></div>
+          <div class="container-lateral2"></div>
+        </div>
+
+        <div class="container-inferior">
+          <button class="btn-reposicionar">REPOSICIONAR</button>
+        </div>
+        <p>Bienvenido a Battleship. Tienes 10 misiles para disparar.</p>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container-footer">
+        <p>
+          ©2024 - Joaquín Medina & Roberto González - Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="container-modal">
+        <div class="logo-modal"><h1>Battleship Game</h1></div>
+      </div>
+
+      <div class="contenedor">
+        <div class="formu">
+          <label>Registra tu nombre</label>
+          <input type="text" id="registroInput" />
+          <button class="btn">Registrarse</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>
